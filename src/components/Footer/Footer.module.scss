@@ -1,6 +1,6 @@
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1090CB;
+    color: black;
     padding: 20px 0;
     text-align: center;
 }
@@ -25,26 +25,26 @@
     }
 
     .link {
-        color: #fff;
+        color: black;
         margin: 0 15px;
         text-decoration: none;
         transition: color 0.3s;
 
         &:hover {
-            color: #1090CB; // Change color on hover
+            color: white; // Change color on hover
         }
     }
 }
 
 .socialMedia {
     .socialLink {
-        color: #fff;
+        color: black;
         margin: 0 10px;
         text-decoration: none;
         transition: color 0.3s;
 
         &:hover {
-            color: #1090CB; // Change color on hover
+            color: white; // Change color on hover
         }
     }
 }

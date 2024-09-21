@@ -30,6 +30,8 @@
 .centerText{
     color: #696969;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
 }
 .servicesList{
     position: absolute;
@@ -42,6 +44,7 @@
     justify-content: flex-start;
     background-color: white;
     padding: 1%;
+    font-family: 'Poppins', sans-serif;
 }
 .servicesContent{
     display: flex;
@@ -83,6 +86,7 @@
         left: 10%;
         right: 10%;
         top:280px;
+        font-family: 'Poppins', sans-serif;
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;

@@ -1,7 +1,6 @@
 .container{
     min-width: 1440px;
     height: 743px;
-    top: 102px;
     gap: 0px;
     background: #1090CB1A;
 }
@@ -109,3 +108,21 @@
 
     }
 }
+.foot{
+    position: relative;
+    top: 300px;
+}
+.download{
+    position:absolute;
+    width:193px;
+    background-color:  #1090CB;
+    color: white;
+    padding: 15px 30px;
+    right:30px;
+    top:130px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  

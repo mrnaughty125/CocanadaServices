@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import logo from '../../../assets/logo.svg';
+import logo from '../../assets/logo.svg';
 import { Navigate, useNavigate } from 'react-router-dom';
 export const AppHeader = () => {
     const navigate = useNavigate();
@@ -24,12 +24,9 @@ export const AppHeader = () => {
           <div className={active === 'services'? `${styles.activeColor}`: `${styles.navElements}`}onClick = {()=>{
             setActive('services')
             navigate('/services')}}>Services</div>
-          <div className={active === 'blog'? `${styles.activeColor}`: `${styles.navElements}`}onClick = {()=>{
-            setActive('blog')
-            navigate('/blog')}}>Blog</div>
         <button className={styles.contactBtn} onClick = {()=>{
             setActive('contactUs')
-            navigate('/contactUs')}}>Contact us</button>
+            navigate('/contactUs')}}>Careers</button>
       </nav>
     </header>
   );

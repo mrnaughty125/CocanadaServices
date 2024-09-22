@@ -18,9 +18,9 @@ export const AppHeader = () => {
           <div className={active === 'home'? `${styles.activeColor}`: `${styles.navElements}`} onClick = {()=>{
             setActive('home')
             navigate('/')}}>Home</div>
-          <div className={active === 'aboutus'? `${styles.activeColor}`: `${styles.navElements}`} onClick = {()=>{
-            setActive('aboutus')
-            navigate('/aboutus')}}>About us</div>
+          <div className={active === 'aboutUs'? `${styles.activeColor}`: `${styles.navElements}`} onClick = {()=>{
+            setActive('aboutUs')
+            navigate('/aboutUs')}}>About us</div>
           <div className={active === 'services'? `${styles.activeColor}`: `${styles.navElements}`}onClick = {()=>{
             setActive('services')
             navigate('/services')}}>Services</div>

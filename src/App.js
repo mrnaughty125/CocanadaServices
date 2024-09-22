@@ -1,9 +1,9 @@
+
+import Footer from "./components/Footer/Footer";
 import Services from "./pages/Services/Services";
 import { AppHeader } from './common/AppHeader';
 import Home from "./pages/Home";
-import AboutUs from './pages/AboutUs/AboutUs';
 import { Suspense } from 'react';
-import AboutUs from './pages/AboutUs/AboutUs';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Carrers from "./pages/Careers/Careers";
 function App() {
@@ -15,8 +15,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services/>}/>
-            <Route path="/aboutus" element={<AboutUs/>}/>
-            <Route path="/contactus" element={<Carrers/>}/>
           </Routes>
           </Suspense>
         </Router>

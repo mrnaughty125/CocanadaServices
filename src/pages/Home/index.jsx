@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
-
+import Footer from '../../common/Footer/Footer';
 export const Home = () => {
   const navigate = useNavigate();
   
   return (
+    <div>
     <div className={styles.container}>
       <div className={styles.mainContent}>
         <div className={styles.textSection}>
@@ -29,6 +30,10 @@ export const Home = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div>
+    <Footer/>
+    </div>
     </div>
   );
 };

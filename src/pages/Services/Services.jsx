@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from "./Services.module.scss";
-import speaker from '../../assets/speaker.png';
-import mortage from '../../assets/mortage.png';
-import kyc from '../../assets/kyc.png';
-import training from '../../assets/training.png';
-import telecall from '../../assets/telecall.png';
-import finance from '../../assets/finance.png';
-import logo from '../../assets/logo.jpeg';
+import speaker from '../../assets/services/speaker.png';
+import mortage from '../../assets/services/mortage.png';
+import kyc from '../../assets/services/kyc.png';
+import training from '../../assets/services/training.png';
+import telecall from '../../assets/services/telecall.png';
+import finance from '../../assets/services/finance.png';
+import Footer from '../../common/Footer/Footer';
 const Services = () => {
     const services = [
         {
@@ -35,11 +35,23 @@ const Services = () => {
           image:training
         }
       ];
+      const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href =  '/files/ECard.pdf';;
+        link.download = 'schedule.pdf';  
+        document.body.appendChild(link); 
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
+        <div>
         <div className={styles.container}>
+            <div>
+            <button className={styles.download} onClick={handleDownload}>Download</button>           
+             </div>
             <div className={styles.centerContent}>
                 <div className={styles.centerImage}>
-                    <img src={speaker}/>
+                    <img src={speaker} alt="speaker"/>
                 </div>
                 <h1><span class={styles.our}>Our</span> <span class={styles.services}>Services</span></h1>
                 <div class={styles.centerText}>
@@ -48,9 +60,8 @@ const Services = () => {
                 We specialize in streamlining operations, enhancing efficiency, and allowing<br />
                 you to focus on what truly matters—driving growth and innovation"
                 </div>
-
-                </div>
-                
+               
+            </div>  
             <div className={styles.servicesList}>
                 {services.map(service => (
                     <div className={styles.servicesContent}>
@@ -65,6 +76,10 @@ const Services = () => {
                 ))}
             </div>
             </div>
+        </div>
+        <div className={styles.foot}>
+        <Footer/>
+        </div>
         </div>
     );
 };

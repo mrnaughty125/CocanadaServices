@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Careers.module.scss';
-
+import emailjs from 'emailjs-com';
 const Careers= () => {
     const initialFormData = {
         name: '',
@@ -23,6 +23,17 @@ const Careers= () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
+        emailjs.send(
+            'service_xf76z3t',            // Service ID from EmailJS
+            'template_b1t302u',           // Template ID from EmailJS
+            formData,                     // The form data
+            'WBmkcIHD-ICg3Ru3L'                // User ID from EmailJS
+        ).then((result) => {
+            console.log('Email successfully sent!', result.text);
+            setFormData({ name: '', email: '', employmentType: '', resume: '' });  // Reset form
+        }).catch((error) => {
+            console.log('Error sending email:', error.text);
+        });
         setFormData(initialFormData);
     };
 

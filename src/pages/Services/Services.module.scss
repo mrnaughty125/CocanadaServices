@@ -113,8 +113,9 @@
     }
 }
 .foot{
-    position: relative;
-    top: 300px;
+    position: relative!important;
+    top: 300px!important;
+
 }
 .download{
     position:absolute;

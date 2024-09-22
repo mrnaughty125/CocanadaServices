@@ -1,22 +1,23 @@
 .container {
   width: 100%;
-  padding: 0 20px;
-  height: 90vh;
+  padding: 1rem 20px;
+  /* height: 90vh; */
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
   background-color: #e6f4fb;
 }
 .mainContent {
   display: flex;
+  padding: 0rem 3rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .textSection {
-  width:630px;
-  max-width: 60%;
-  margin-left:123px;
-  margin-top: 160px;
+  width:50%;
+  /* max-width: 50%; */
+  /* margin-left:123px; */
+  /* margin-top: 160px; */
 }
 .textContent, .highlight{
   font-family: 'Poppins', sans-serif;
@@ -58,6 +59,14 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.imageSection{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 @media (max-width: 1024px) {
   .textSection h1 {
     font-size: 2em;

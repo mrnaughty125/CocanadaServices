@@ -26,7 +26,7 @@ export const AppHeader = () => {
             navigate('/services')}}>Services</div>
         <button className={styles.contactBtn} onClick = {()=>{
             setActive('contactUs')
-            navigate('/contactUs')}}>Careers</button>
+            navigate('/careers')}}>Careers</button>
       </nav>
     </header>
   );

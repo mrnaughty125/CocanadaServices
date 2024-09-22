@@ -1,8 +1,9 @@
 
-import Footer from "./components/Footer/Footer";
+import Footer from "../src/common/components/Footer/Footer";
 import Services from "./pages/Services/Services";
 import { AppHeader } from './common/components/AppHeader';
 import Home from "./pages/Home";
+import AboutUs from './pages/AboutUs/AboutUs';
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services/>}/>
+            <Route path="/aboutus" element={<AboutUs/>}/>
           </Routes>
           <Footer/>
           </Suspense>

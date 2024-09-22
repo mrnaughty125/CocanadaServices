@@ -59,12 +59,14 @@
             .services-we-offer-container-right-layer1, .services-we-offer-container-right-layer2{
                 display: flex;
                 justify-content: center;
+                gap:2rem;
                 align-items: center;
                 width: 100%;
                 height: 100%;
+                padding: 1rem 0rem;
                 .service{
                     display: flex;
-                    gap:1rem;
+                    gap:1.5rem;
                     justify-content: center;
                     align-items: center;
                     margin: 1rem;

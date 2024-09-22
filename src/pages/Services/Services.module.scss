@@ -1,5 +1,4 @@
 .container{
-    min-width: 1440px;
     height: 743px;
     gap: 0px;
     background: #1090CB1A;
@@ -37,12 +36,12 @@
     display: flex;
     left: 10%;
     right: 10%;
+    width: 80%;
     top:280px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     background-color: white;
-    padding: 1%;
     font-family: 'Poppins', sans-serif;
 }
 .servicesContent{
@@ -55,6 +54,7 @@
     height: 200px;
     padding: 10px;
     text-align: center;
+    text-wrap: wrap;
     text-overflow: ellipsis;
     border-bottom: 1px solid #D2D2D2; 
 }
@@ -72,7 +72,6 @@
 }
 .serviceheader img{
     width: 90px;
-    height: center;
 }
 .serviceText{
     color: #797979;
@@ -99,6 +98,8 @@
         align-items: center;
         background: #FFFFFF;
         width: 100%;
+        font-size: 8px;
+
         height: 200px;
         padding: 10px;
         text-align: center;
@@ -106,6 +107,9 @@
         border-bottom: 1px solid #D2D2D2; 
         font-size: 20px;
 
+    }
+    .download{
+        right:0px;
     }
 }
 .foot{

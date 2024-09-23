@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 import { Navigate, useNavigate } from 'react-router-dom';
 export const AppHeader = () => {
     const navigate = useNavigate();
@@ -13,6 +13,7 @@ export const AppHeader = () => {
             alt="mahatria"
             className={styles.appIcon}
             loading="lazy"
+            onClick={() => navigate('/')}
           />
       <nav className={styles.nav}>
           <div className={active === 'home'? `${styles.activeColor}`: `${styles.navElements}`} onClick = {()=>{

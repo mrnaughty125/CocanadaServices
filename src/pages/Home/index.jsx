@@ -16,20 +16,21 @@ export const Home = () => {
               Experienced in delivering <span className={styles.highlight}>BPO services </span> and <span className={styles.highlight}>Trainings</span> tailored to meet your business needs.
             </div>
             <div className={styles.textDescription}>
-              {/* KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications
-              and website builders measuring dozens of completed projects. We build and develop
-              mobile applications for several top platforms, including Android & IOS. */}
-
               Cocanda BPO Services (Pvt) Ltd offers a wide range of professional services, including Telecalling, Data Entry, Recovering, Recruiting, and more. Our dedicated team ensures top-notch service delivery, tailored to meet the unique needs of businesses across various sectors.
             </div>
             <div className={styles.buttons}>
               <button
                 className={styles.primaryButton}
-                onClick={() => navigate('/contactUs')}
+                onClick={() => navigate('/careers')}
               >
                 Contact us
               </button>
-              <button className={styles.secondaryButton}>View more</button>
+              <button 
+                className={styles.secondaryButton}
+                onClick={() => navigate('/aboutus')}
+              >
+                View more
+              </button>
             </div>
           </div>
 

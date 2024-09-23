@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import ServicesWeOfferCss from './services-we-offer.module.scss';
 import recuirtingIcon from '../../assets/aboutUS/recuirting.jpg';
 import telecallingIcon from '../../assets/aboutUS/tele-calling.png';
@@ -6,6 +7,7 @@ import dataEntryIcon from '../../assets/aboutUS/data-entry.png';
 import recoveringIcon from '../../assets/aboutUS/recovery.png';
 
 function ServicesWeOffer() {
+  const navigate = useNavigate();
   return (
     <div className={ServicesWeOfferCss['services-we-offer-container']}>
         {/* <hr/> */}
@@ -14,8 +16,8 @@ function ServicesWeOffer() {
             <div className={ServicesWeOfferCss['services-we-offer-container-left']} >
                 <p>Cocanda BPO Services (Pvt) Ltd provides expert Telecalling, Data Entry, Recovering, Recruiting, and other BPO solutions to meet diverse business needs.</p>
                 <div className={ServicesWeOfferCss['btns-wrapper']}>
-                    <button className={ServicesWeOfferCss['btn']}>Read More</button>
-                    <button className={ServicesWeOfferCss['btn']}>Contact Us</button>
+                    <button className={ServicesWeOfferCss['btn']} onClick={() => navigate('/services')}>Read More</button>
+                    <button className={ServicesWeOfferCss['btn']} onClick={() => navigate('/careers')}>Contact Us</button>
                 </div>
             </div>
 

@@ -62,8 +62,8 @@ const Services = () => {
           <h1><span class={styles.our}>Our</span> <span class={styles.services}>Services</span></h1>
           <div class={styles.centerText}>
             <div className={styles.centerText}>
-              "Unlock the potential of your business with our comprehensive BPO services<br />
-              We specialize in streamlining operations, enhancing efficiency, and allowing<br />
+              "Unlock the potential of your business with our comprehensive BPO services
+              We specialize in streamlining operations, enhancing efficiency, and allowing
               you to focus on what truly matters—driving growth and innovation"
             </div>
 
@@ -85,13 +85,15 @@ const Services = () => {
             ))}
           </div>
           
-          <div className={styles.foot}>
-            <Footer />
-          </div>
+         
         </div>
       </div>
      
+      <div className={styles.foot}>
+            <Footer />
+          </div>
     </div>
+    
   );
 };
 

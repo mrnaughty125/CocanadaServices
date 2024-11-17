@@ -24,7 +24,7 @@
         }
 
        input, select {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             font-size: 14px;
             border: 1px solid #ccc;
@@ -54,8 +54,13 @@
     }
 }
 
+.parent{
+    background-color: #E8F4FA;
+    padding: 20px;
+}
+
 /* Responsive Styling */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .careersFormContainer {
         padding: 10px;
     }
@@ -70,7 +75,10 @@
         font-size: 14px;
         padding: 8px;
     }
-}
-.parent{
-    background-color: #E8F4FA;
+    
+    .formGroup{
+        input{
+            width: 93% !important;
+        }
+    }
 }

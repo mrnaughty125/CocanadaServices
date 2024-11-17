@@ -1,14 +1,17 @@
 .team-container {
-//   overflow: hidden;
   position: relative;
   margin: 1rem 4rem;
-  h1{
+  h3{
+    margin: 0;
     color: #1090CB;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
   }
 }
 
 .team-members {
   display: flex;
+  flex-wrap: wrap;
   width: fit-content;
   animation: scrolling 40s linear infinite; 
 }
@@ -32,3 +35,21 @@
   border-radius: 15px;
   margin-bottom: 10px;
 }
+
+
+@media (max-width: 700px) {
+  .team-container{
+    margin: 15px 25px;
+    h3{
+      font-size: 18px;
+    }
+  }
+
+  .team-member {
+    padding: 10px;
+    p{
+      margin: 5px !important;
+    }
+  }
+}
+

@@ -72,3 +72,34 @@
         z-index: -1;
     }
 }
+
+@media (max-width: 700px) {
+    .hero-section{
+        padding: 15px 25px;
+    }
+
+    .hero-section-layer1-left h3{
+        font-size: 18px !important;
+    }
+    
+  .hero-section-layer1{
+    flex-direction: column;
+  }
+
+  .hero-section-layer1-right{
+    display: none !important;
+  }
+
+  .hero-section-layer1-left{
+    width: 100% !important;
+  }
+
+  .hero-section-layer1-left p{
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  
+  .design-blue, .design-green{
+    width: 25px !important;
+  }
+}

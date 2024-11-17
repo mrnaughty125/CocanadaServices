@@ -19,11 +19,6 @@
 
 .links {
     margin-bottom: 10px;
-
-    @media (min-width: 600px) {
-        margin-bottom: 0;
-    }
-
     .link {
         color: black;
         margin: 0 15px;
@@ -53,3 +48,5 @@
     margin-top: 10px;
     font-size: 14px;
 }
+
+

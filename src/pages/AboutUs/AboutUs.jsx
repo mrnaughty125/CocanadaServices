@@ -20,7 +20,7 @@ function AboutUs() {
       <WhyChooseUsSection />
       <ServicesWeOffer />
       <div className={AboutUsCss['team-container']}>
-        <h1>Our Team</h1>
+        <h3>Our Team</h3>
         <div className={AboutUsCss['team-members']}>
           {teamMembers.map((member, index) => (
             <div key={index} className={AboutUsCss['team-member']}>

@@ -76,6 +76,17 @@ const Careers= () => {
                     />
                 </div>
                 <div className={styles.formGroup}>
+                    <label htmlFor="resume">Upload Resume</label>
+                    <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf, .doc, .docx"
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className={styles.formGroup}>
                     <label htmlFor="employmentType">Type of Employment</label>
                     <select
                         id="employmentType"
@@ -91,17 +102,6 @@ const Careers= () => {
                         <option value="kyc">KYC Project</option>
                         <option value="training">Training Project</option>
                     </select>
-                </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="resume">Upload Resume</label>
-                    <input
-                        type="file"
-                        id="resume"
-                        name="resume"
-                        accept=".pdf, .doc, .docx"
-                        onChange={handleChange}
-                        required
-                    />
                 </div>
                 <button type="submit" className={styles.submitButton}>Submit Application</button>
             </form>

@@ -11,7 +11,7 @@ function ServicesWeOffer() {
   return (
     <div className={ServicesWeOfferCss['services-we-offer-container']}>
         {/* <hr/> */}
-        <h1>Services We Offer</h1>
+        <h3>Services We Offer</h3>
         <div className={ServicesWeOfferCss['services-we-offer-section']}>
             <div className={ServicesWeOfferCss['services-we-offer-container-left']} >
                 <p>Cocanda BPO Services (Pvt) Ltd provides expert Telecalling, Data Entry, Recovering, Recruiting, and other BPO solutions to meet diverse business needs.</p>
